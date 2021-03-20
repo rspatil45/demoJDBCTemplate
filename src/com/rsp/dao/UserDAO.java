@@ -1,7 +1,13 @@
 package com.rsp.dao;
 
-import com.rsp.model.UserBean;
+import java.util.List;
+
+import com.rsp.model.User;
 
 public interface UserDAO {
-	void insert(UserBean user);
+	void insert(User user);
+	void insertBatch(List<User> users);
+	List<User> findAllUsers();
+	void cleanUp();
+	User findByEmail(String email);
 }

@@ -1,6 +1,6 @@
 package com.rsp.model;
 
-public class UserBean {
+public class User {
 	String firstname;
 	String lastname;
 	String email;
