@@ -1,14 +1,18 @@
 package com.rsp.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 //import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 //import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.stereotype.Repository;
 
 import com.rsp.model.UserBean;
 
+@Repository("userDao")
 public class UserDAOImpl implements UserDAO {
 	
 	//JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
+	@Autowired
 	JdbcTemplate jdbcTemplate;
 	@Override
 	public void insert(UserBean user) {

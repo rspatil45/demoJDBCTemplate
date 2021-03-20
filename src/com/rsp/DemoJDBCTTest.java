@@ -15,9 +15,9 @@ public class DemoJDBCTTest {
 		UserDAOImpl userDAO = context.getBean("userDao", UserDAOImpl.class);
 
 		UserBean usr = new UserBean();
-		usr.setFirstname("ashoka");
-		usr.setLastname("king");
-		usr.setEmail("ashoka@world.com");
+		usr.setFirstname("rahul");
+		usr.setLastname("patil");
+		usr.setEmail("pushyamitra@world.com");
 		usr.setPassword("Nothing Impossible");
 
 		// UserDAO userDAO = new UserDAOImpl();
